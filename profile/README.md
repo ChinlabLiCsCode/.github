@@ -6,7 +6,7 @@ Data itself is not stored in git, but rather on a NAS in our lab which backs up 
 sharing the data folder on Box with the user, and then mounting the Box folder to the local machine using the Box desktop client. 
 
 Repositories containing basic data analysis and data processing code are made public here, as are repositories corresponding to published papers. 
-New/unpublished work will be left private for security reasons. 
+New/unpublished work will be left private for security reasons. If you need to be added to the organization let me know!
 
 The usage of git began in 2023 with an effort by Henry and Michael to organize the code base and make it more accessible. As such, older code probably can't be found here. 
 
