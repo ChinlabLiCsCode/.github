@@ -12,13 +12,10 @@ The usage of git began in 2023 with an effort by Henry and Michael to organize t
 
 ## Configuring your machine to use this code base
 
-To use this code base, you will need to have git and MATLAB installed on your machine. Then you'll want to clone a few of the basic repositories into your Documents/MATLAB folder. Specifically, you'll need to do the following repositories: 
+To use this code base, you will need to have git and MATLAB installed on your machine. Then you'll want to clone the `lics-codebase` repository into the MATLAB folder on your machine.
 
-- imaging
-- helperfuncs
-- calibration
-- standard-processing
+You then need to add two additional .m files in your MATLAB directory, which are not stored in git because they're machine specific. These are: `localpath.m` and `startup.m`. I'm including templates for these files in this repository, but they'll need to be filled in with the correct paths for your machine. `startup.m` is run when you open MATLAB, and lets you add extra folders to your MATLAB path (in this case, lics-codebase and its subfolders). `localpath.m` tells the image loading functions where to look for the images stored on your machine. We'll get to that next.
 
-You then need to add two additional .m files in your MATLAB directory, which are not stored in git because they're machine specific. These are: localpath.m and startup.m. I'm including templates for these files in this repository, but they'll need to be filled in with the correct paths for your machine.
+In order to automatically download and process images from the experiment, you'll need to download the Box desktop client, and have the CHIN_LICS folder shared with you. The NAS automatically uploads to a subfolder of that Box folder, and so you can get data automatically through it. Then you'll need to configure your `localpath.m` to point to the right location for the Box sync on your machine. 
 
 I then recommend cloning repositories for specific projects into a common folder on your machine, such as Documents/CodeProjects or something like this. You can also clone the Daily repository, which has all the daily analysis scripts we use as we take data. 
